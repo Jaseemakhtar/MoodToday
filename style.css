@@ -1,0 +1,142 @@
+body{
+    background-color: #99ddff;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 340px;
+    height: 500px;
+    overflow: hidden;
+}
+.computer{
+    width: 300px;
+    height: 240px;
+    background-color: #445057;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 20px;
+    position: relative;
+}
+.screen{
+    width: 260px;
+    height: 200px;
+    background-color: #7c929e;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+}
+#display{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:rgb(201, 220, 230);
+    border: 0;
+    overflow: hidden;
+}
+.stand{
+    width: 80px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #445057;
+    position: relative;
+    top: 24px;
+}
+.stand2{
+    width: 160px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #445057;
+    position: relative;
+    top: 22px;
+}
+.keyboard{
+    margin: 24px auto;
+    width: 260px;
+    height: 16px;
+    background-color: #445057;
+    position: relative;
+    top: 22px;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+.man{
+    position: relative;
+    margin: 0 auto;
+    top: -60px;
+}
+.head{
+    position: relative;
+    margin: 0 auto;
+    top: 4px;
+    width: 70px;
+    height: 80px;
+    background-color: black;
+    border-radius: 20px 20px 30px 30px;
+    z-index: 2;
+}
+.neck{
+    margin: 0 auto;
+    width: 32px;
+    height: 20px;
+    background-color: #D8A48B;
+    position: relative;
+    z-index: 1;
+}
+.top{
+    margin: 0 auto;
+    width: 162px;
+}
+.torso{
+    width: 100px;
+    height: 110px;
+    background-color: #3C97C9;
+    position: relative;
+    display: inline-block;
+    border-radius: 6px 6px 0 0;
+}
+.lefthand, .righthand{
+    position: relative;
+    top: -40px;
+    width: 26px;
+    height: 70px;
+    display: inline-block;
+    background-color: #3C97C9;
+    margin: 0px;
+}
+.lefthand{
+    border-radius: 8px 0px 8px 8px;
+    transform: rotate(40deg);
+    animation: lefthand 1s infinite alternate;
+}
+.righthand{
+    border-radius: 0px 8px 8px 8px;
+    transform: rotate(320deg);
+    animation: righthand 1s infinite alternate;
+}
+.chair{
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    background-color: #253138;
+    border-radius: 12px 12px 0px 0px;
+    position: relative;
+    top: -130px;
+}
+
+@keyframes lefthand {
+    from{
+        transform: rotate(40deg) translateX(0);
+    }
+    to{
+        transform: rotate(46deg) translateX(-6px);
+    }
+}
+
+@keyframes righthand {
+    from{
+        transform: rotate(320deg) translateX(0);
+    }
+    to{
+        transform: rotate(314deg) translateX(6px);
+    }
+}
